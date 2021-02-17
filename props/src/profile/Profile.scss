@@ -1,0 +1,153 @@
+.profile--card {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 200px;
+  padding: 1.5rem;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 32px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.2s ease-in-out;
+  margin-top: 1rem;
+
+  .profile--card--img {
+    height: 100%;
+    width: 180px;
+    border-radius: 10px;
+    overflow: hidden;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .profile--card--content {
+    text-align: left;
+    margin-left: 2rem;
+    width: 280px;
+    .profile--card--name {
+      h2 {
+        font-size: 1.3rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin: 0;
+        color: #111;
+      }
+    }
+    .profile--card--profession {
+      h4 {
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 0.5rem 0;
+        color: #111;
+      }
+    }
+    .profile--card--infos {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f2f5f8;
+      padding: 0.5rem 1rem;
+      margin: 1rem 0;
+      border-radius: 5px;
+      .profile--card--infos--articles,
+      .profile--card--infos--followers,
+      .profile--card--infos--rating {
+        display: flex;
+        flex-direction: column;
+      }
+      .profile--card--infos-text {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: #a1aab9;
+      }
+      .profile--card--infos-value {
+        color: #111;
+        font-weight: 500;
+        font-size: 1rem;
+        margin-top: 0.2rem;
+      }
+    }
+    .profile--card--buttons {
+      display: flex;
+      justify-content: space-between;
+
+      .button--primary {
+        font-size: 0.9rem;
+        font-weight: 500;
+        width: 48%;
+        background-color: #0d6efd;
+        color: #fff;
+        border-radius: 5px;
+        border: 1px #0d6efd solid;
+        padding: 0.5rem 1.5rem;
+        transition: 0.2s ease-in-out;
+
+        cursor: pointer;
+        &:hover {
+          background-color: darken($color: #0d6efd, $amount: 20);
+          border: 1px solid darken($color: #0d6efd, $amount: 20);
+        }
+      }
+      .button--secondary {
+        font-size: 0.9rem;
+        font-weight: 500;
+        width: 48%;
+        color: #0d6efd;
+        background-color: transparent;
+        border-radius: 5px;
+        border: 1px #0d6efd solid;
+        padding: 0.5rem 1.5rem;
+        transition: 0.2s ease-in-out;
+
+        cursor: pointer;
+        &:hover {
+          background-color: #0d6efd;
+          color: #f7f7f7;
+          transition: 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+}
+.profile--description {
+  width: 500px;
+  height: fit-content;
+  padding: 1.5rem;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 32px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin: 1rem 0;
+  .profile--description--title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #111;
+    margin: 0.5rem 0;
+  }
+  .profile--description--text {
+    font-size: 1rem;
+    color: #111;
+    margin-top: 0.5rem;
+  }
+  .profile--description--social {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    border-top: 1px #a1aab9 solid;
+    padding-top: 2rem;
+    .social--icon {
+      margin-right: 1rem;
+      i {
+        font-size: 1.4rem;
+        color: #111;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        &:hover {
+          color: #0d6efd;
+          transition: 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+}
